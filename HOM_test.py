@@ -9,7 +9,7 @@ driver.set_window_size(1920, 1080)
 driver.get("https://rejtelyekhaza.netlify.app/") #ezt cseréld le kérlek, a localhostra
 driver.save_screenshot("HOM_fooldal.png")
 time.sleep(5)
-part=driver.find_element(By.LINK_TEXT, value="Bejelentkezés")
+part=driver.find_element(By.LINK_TEXT, value="Belépés")
 part.click()
 driver.save_screenshot("Bejelentkezes.png")
 driver.find_element(By.XPATH, '//input[@name="userName"]').send_keys('neliah69')
